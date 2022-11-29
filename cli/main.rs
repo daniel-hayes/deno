@@ -665,7 +665,7 @@ async fn run_with_watch(flags: Flags, script: String) -> Result<i32, AnyError> {
   Ok(0)
 }
 
-async fn run_command(
+pub async fn run_command(
   flags: Flags,
   run_flags: RunFlags,
 ) -> Result<i32, AnyError> {
