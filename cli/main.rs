@@ -42,7 +42,7 @@ use crate::args::InfoFlags;
 use crate::args::InitFlags;
 use crate::args::InstallFlags;
 use crate::args::LintFlags;
-use crate::args::ReplFlags;
+pub use crate::args::ReplFlags;
 pub use crate::args::RunFlags;
 use crate::args::TaskFlags;
 use crate::args::TestFlags;
