@@ -575,7 +575,7 @@ async fn format_command(
   Ok(0)
 }
 
-async fn repl_command(
+pub async fn repl_command(
   flags: Flags,
   repl_flags: ReplFlags,
 ) -> Result<i32, AnyError> {
