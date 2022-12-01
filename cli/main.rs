@@ -35,7 +35,7 @@ use crate::args::CompletionsFlags;
 use crate::args::CoverageFlags;
 use crate::args::DenoSubcommand;
 use crate::args::DocFlags;
-use crate::args::EvalFlags;
+pub use crate::args::EvalFlags;
 pub use crate::args::Flags;
 use crate::args::FmtFlags;
 use crate::args::InfoFlags;
@@ -268,7 +268,7 @@ async fn load_and_type_check(
   Ok(())
 }
 
-async fn eval_command(
+pub async fn eval_command(
   flags: Flags,
   eval_flags: EvalFlags,
 ) -> Result<i32, AnyError> {
